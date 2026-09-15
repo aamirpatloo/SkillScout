@@ -28,6 +28,40 @@ const userSchema = new mongoose.Schema(
             enum: ["job_seeker"],
             default: "job_seeker",
         },
+
+        skills: {
+            type: [String],
+            default: [],
+        },
+
+        experience: {
+            type: Number,
+            default: 0,
+            min: 0,
+        },
+
+        preferredRoles: {
+            type: [String],
+            default: [],
+        },
+
+        preferredLocation: {
+            type: String,
+            default: "",
+            trim: true,
+        },
+
+        workMode: {
+            type: String,
+            enum: ["remote", "hybrid", "onsite", ""],
+            default: "",
+        },
+
+        expectedSalary: {
+            type: Number,
+            min: 0,
+            default: null,
+        },
     },
     {
         timestamps: true,
