@@ -62,6 +62,33 @@ const userSchema = new mongoose.Schema(
             min: 0,
             default: null,
         },
+
+        resume: {
+            originalName: {
+                type: String,
+                default: "",
+            },
+
+            fileName: {
+                type: String,
+                default: "",
+            },
+
+            mimeType: {
+                type: String,
+                default: "",
+            },
+
+            size: {
+                type: Number,
+                default: 0,
+            },
+
+            uploadedAt: {
+                type: Date,
+                default: null,
+            },
+        },
     },
     {
         timestamps: true,
