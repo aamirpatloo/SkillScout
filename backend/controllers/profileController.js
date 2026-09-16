@@ -24,6 +24,7 @@ const getProfile = async (req, res) => {
                 preferredLocation: user.preferredLocation,
                 workMode: user.workMode,
                 expectedSalary: user.expectedSalary,
+                resume: user.resume,
             },
         });
     } catch (error) {
@@ -101,6 +102,7 @@ const updateProfile = async (req, res) => {
                 preferredLocation: user.preferredLocation,
                 workMode: user.workMode,
                 expectedSalary: user.expectedSalary,
+                resume: user.resume,
             },
         });
     } catch (error) {

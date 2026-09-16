@@ -1,4 +1,5 @@
 node_modules/
+backend/uploads/resumes/
 .env
 .env.*
 !.env.example
